@@ -1,0 +1,10 @@
+# github.com/go-redis/redis v6.15.8+incompatible
+github.com/go-redis/redis
+github.com/go-redis/redis/internal
+github.com/go-redis/redis/internal/consistenthash
+github.com/go-redis/redis/internal/hashtag
+github.com/go-redis/redis/internal/pool
+github.com/go-redis/redis/internal/proto
+github.com/go-redis/redis/internal/util
+# gopkg.in/ini.v1 v1.57.0
+gopkg.in/ini.v1

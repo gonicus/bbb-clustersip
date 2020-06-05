@@ -1,0 +1,13 @@
+[Unit]
+Description=Asterisk Registration Backend
+After=asterisk.service
+
+[Service]
+User=asterisk
+EnvironmentFile=/etc/default/astregbackend
+ExecStart=/usr/local/sbin/astregbackend -c ${CONFIG}
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
