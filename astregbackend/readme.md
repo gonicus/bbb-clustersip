@@ -14,11 +14,13 @@ When executing 'pjsip show endpoints' for example.
 # Installation
 
 ```
-# install golang on ubuntu 16.04
-apt install golang-1.10 redis-server
+# install golang and redis
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go redis-server
 
 # get and build astregbackend
-/usr/lib/go-1.10/bin/go get github.com/denzs/astregbackend
+go get github.com/denzs/astregbackend
 
 cd ~/go/src/github.com/denzs/astregbackend
 cp ~/go/bin/astregbackend /usr/local/sbin/
